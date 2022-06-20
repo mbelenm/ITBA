@@ -1,0 +1,263 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(/imagenes/Cloudy.svg) !important;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: solid 1px #cfcfcf;
+}
+/* .dropdown {
+  display: inline-block;
+  margin: 5px 20px;
+}
+
+.dropdown-menu {
+  width: 250px;
+} */
+
+nav button {
+  border-style: none;
+  background-color: #ffffff;
+  margin: 5px 20px;
+}
+
+.offcanvas-title {
+  color: grey;
+  letter-spacing: 0.2em;
+}
+
+
+#botonMovil {
+  background-color: #4f52ff;
+}
+
+#Opciones {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+#Opciones a {
+  text-decoration: none;
+  color: #52A3C6;
+  margin: 10px;
+  font-size: 1.2em;
+  font-weight: lighter;
+  
+}
+
+#boton_desplegable {
+  color: #52A3C6;
+  margin: 10px 45px;
+  background-color: #ffffff;
+}
+
+header img {
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  width: 150px;
+}
+/* ATAJOS */
+
+#movimientosRapidos {
+  width: 90%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: solid 1px #cfcfcf;
+  box-shadow: 1px 1px 10px #cfcfcf;
+}
+
+.dineroDisponible {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.dineroDisponible span {
+  color: white;
+}
+
+.atajos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.atajos a {
+  text-align: center;
+  background-color: #C4C4C4;
+  font-size: 10px;
+  width: 120px;
+  height: 75px;
+  border-radius: 1em;
+  margin: 10px 10px;
+  color: white;
+  text-decoration: none;
+ 
+ 
+
+}
+
+/* CAMBIO */
+
+#mostrardivisas {
+  color: grey;
+  text-align: center;
+  background-color: white; 
+  margin: 10px;
+  border-radius: 2em;
+  font-size: 12px;
+}
+
+/*#divisas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%; */
+  
+  #divisas {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    padding: 20px;
+   
+   
+  }
+
+
+
+#divisas p {
+  border: solid 1px grey;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 0.5em; 
+}
+
+
+
+/* ACTIVIDAD */
+
+#actividad {
+  width: 90%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: solid 1px #cfcfcf;
+  box-shadow: 1px 1px 10px #cfcfcf;
+  background-color: #fff;
+  opacity: 0.91;
+}
+
+#buscador {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.d-flex {
+  width: 300px;
+  height: 40px;
+}
+
+#actividad h2 {
+  display: inline-block;
+  text-align: right;
+  /* margin: 10px auto; */
+}
+
+.actividadHecha {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.actividadHecha a {
+  text-decoration: none;
+}
+
+
+/* VERSION PARA PC */
+
+@media screen and (min-width: 700px) {
+  nav button {
+    visibility: hidden;
+  }
+
+  nav {
+    flex-direction: row-reverse;
+    top: 0;
+    left: 35px;
+    height: 50px;
+    justify-content: left;
+    width: 400px;
+    margin-top: 20px;
+    border: none;
+    visibility: hidden;
+  }
+
+  header {
+    height: 50px;
+    margin-top: 20px;
+  }
+  header img {
+    float: right;
+    margin-right: 45px;
+    cursor: pointer;
+  }
+
+  #movimientosRapidos {
+    width: 70%;
+    margin: 40px auto;
+    box-shadow: none;
+    border: none;
+  }
+
+  .dineroDisponible span {
+    padding: 0 30px;
+    
+  }
+
+  /*  #Opciones {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Opciones a {
+    text-decoration: none;
+    color: #4f52ff;
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: lighter;
+  }
+
+  #boton_desplegable {
+    margin: 10px 45px;
+    background-color: #4f52ff;
+  } */
+
+  /* ATAJOS */
+  .atajos a {
+    font-size: 20px;
+    width: 200px;
+    padding: 10px 0;
+  }
+
+  .dineroDisponible span {
+    font-size: 24px;
+  }
+
+  #boton {
+    visibility: visible;
+  }
+}
