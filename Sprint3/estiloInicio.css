@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(/imagenes/Cloudy.svg) !important;
+  background-image: url(/Cloudy.svg) !important;
   background-size: cover;
 }
 
@@ -36,6 +36,36 @@ nav button {
   color: grey;
   letter-spacing: 0.2em;
 }
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+//atributos divisas queden un solo bloque 
+#divisas {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+#divisas a {
+  color:white;
+  padding: 5px 2px;
+  text-decoration: none;
+  display: block;
+}
+
+
+#divisas a:hover {
+  background-color: #ddd;
+}
+
+
 
 
 #botonMovil {
@@ -113,13 +143,16 @@ header img {
 /* CAMBIO */
 
 #mostrardivisas {
-  color: grey;
-  text-align: center;
-  background-color: white; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
-  border-radius: 2em;
-  font-size: 12px;
+
+  background-image: linear-gradient(to right, #d7d8eb, #21b4f3);
 }
+
+
 
 /*#divisas {
   display: grid;
@@ -135,14 +168,16 @@ header img {
    
   }
 
+ 
 
 
-#divisas p {
+
+ #divisas p {
   border: solid 1px grey;
   margin: 5px;
   padding: 10px;
   border-radius: 0.5em; 
-}
+} 
 
 
 
